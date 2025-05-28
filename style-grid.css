@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.chessboard-grid-container {
+    display: grid;
+   
+    grid-template-columns: repeat(8, 1fr);
+    
+    grid-template-rows: repeat(8, 1fr);
+    width: 640px; 
+    height: 640px; 
+    border: 5px solid #333;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.square {
+   
+    background-color: #ffb6c1; 
+}
+
+
+.chessboard-grid-container .square:nth-child(odd) {
+    background-color: #ffb6c1; 
+}
+
+.chessboard-grid-container .square:nth-child(even) {
+    background-color: #000000;
+}
+
+
+.chessboard-grid-container .square:nth-child(16n + 9), 
+.chessboard-grid-container .square:nth-child(16n + 11),
+.chessboard-grid-container .square:nth-child(16n + 13),
+.chessboard-grid-container .square:nth-child(16n + 15),
+.chessboard-grid-container .square:nth-child(16n + 25), 
+.chessboard-grid-container .square:nth-child(16n + 27),
+.chessboard-grid-container .square:nth-child(16n + 29),
+.chessboard-grid-container .square:nth-child(16n + 31),
+.chessboard-grid-container .square:nth-child(16n + 41), 
+.chessboard-grid-container .square:nth-child(16n + 43),
+.chessboard-grid-container .square:nth-child(16n + 45),
+.chessboard-grid-container .square:nth-child(16n + 47),
+.chessboard-grid-container .square:nth-child(16n + 57), 
+.chessboard-grid-container .square:nth-child(16n + 59),
+.chessboard-grid-container .square:nth-child(16n + 61),
+.chessboard-grid-container .square:nth-child(16n + 63) {
+    background-color: #000000; 
+}
+
+
+.chessboard-grid-container .square:nth-child(16n + 10), 
+.chessboard-grid-container .square:nth-child(16n + 12),
+.chessboard-grid-container .square:nth-child(16n + 14),
+.chessboard-grid-container .square:nth-child(16n + 16),
+.chessboard-grid-container .square:nth-child(16n + 26), 
+.chessboard-grid-container .square:nth-child(16n + 28),
+.chessboard-grid-container .square:nth-child(16n + 30),
+.chessboard-grid-container .square:nth-child(16n + 32),
+.chessboard-grid-container .square:nth-child(16n + 42), 
+.chessboard-grid-container .square:nth-child(16n + 44),
+.chessboard-grid-container .square:nth-child(16n + 46),
+.chessboard-grid-container .square:nth-child(16n + 48),
+.chessboard-grid-container .square:nth-child(16n + 58), 
+.chessboard-grid-container .square:nth-child(16n + 60),
+.chessboard-grid-container .square:nth-child(16n + 62),
+.chessboard-grid-container .square:nth-child(16n + 64) {
+    background-color: #ffb6c1; 
+}
